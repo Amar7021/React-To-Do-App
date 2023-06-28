@@ -8,7 +8,7 @@ const UpdateForm = ({ updateData, changeHolder, updateTask, cancelUpdate }) => {
           <input
             value={updateData && updateData.title}
             onChange={(e) => changeHolder(e)}
-            className="form-control form-control-lg"
+            className="input"
           />
         </div>
         <button
