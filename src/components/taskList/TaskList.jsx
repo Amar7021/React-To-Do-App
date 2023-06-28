@@ -20,7 +20,7 @@ const TaskList = ({ taskList, completeTask, setUpdateData, deleteTask }) => {
                     >
                       <i className="fa-solid fa-circle-check"></i>
                     </span>
-                    <span className={task.status ? "done" : ""}>
+                    <span className={task.status ? "done" : "task-title"}>
                       {task.title}
                     </span>
                   </div>

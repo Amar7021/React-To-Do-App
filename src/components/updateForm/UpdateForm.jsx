@@ -9,6 +9,10 @@ const UpdateForm = ({ updateData, changeHolder, updateTask, cancelUpdate }) => {
             value={updateData && updateData.title}
             onChange={(e) => changeHolder(e)}
             className="input"
+            required
+            autoFocus
+            maxLength={60}
+            placeholder="Enter Task"
           />
         </div>
         <button

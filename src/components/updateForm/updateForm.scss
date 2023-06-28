@@ -1,10 +1,12 @@
+@import "../../App.scss";
+
 .updateForm {
   display: flex;
   justify-content: center;
 
   .input-container {
     width: 40vw;
-    margin: 0 25px 30px 30px;
+    margin: 0 25px 30px 0;
 
     .input {
       width: 40vw;
@@ -14,6 +16,10 @@
       padding: 10px;
       font-size: 16px;
       border-radius: 5px;
+    }
+
+    @include tablet {
+      margin-right: 10px;
     }
   }
 
@@ -27,7 +33,13 @@
     cursor: pointer;
     background: blue;
     color: var(--text-color);
+    font-size: 18px;
     margin-right: 15px;
+
+    @include tablet {
+      margin-right: 10px;
+      font-size: 14px;
+    }
   }
 
   .cancelBtn {
@@ -40,6 +52,10 @@
     cursor: pointer;
     background: red;
     color: var(--text-color);
-    margin-right: 15px;
+    font-size: 18px;
+
+    @include tablet {
+      font-size: 14px;
+    }
   }
 }

@@ -8,6 +8,10 @@ const TaskForm = ({ tasks, setTasks, addTask }) => {
           value={tasks}
           onChange={(e) => setTasks(e.target.value)}
           className="input"
+          required
+          autoFocus
+          maxLength={60}
+          placeholder="Enter Task"
         />
       </div>
       <button

@@ -1,3 +1,5 @@
+@import "../../App.scss";
+
 .taskList {
   display: flex;
   justify-content: center;
@@ -12,6 +14,10 @@
     font-size: 22px;
     position: relative;
 
+    @include tablet {
+      width: 80vw;
+    }
+
     .listed-task {
       width: 60vw;
       display: flex;
@@ -20,14 +26,32 @@
       span {
         margin-left: 20px;
 
+        @include tablet {
+          margin-left: 10px;
+        }
+
         .fa-circle-check {
           cursor: pointer;
           color: greenyellow;
         }
       }
 
+      .task-title {
+        font-size: 22px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+
+        @include tablet {
+          font-size: 16px;
+        }
+      }
+
       .done {
         text-decoration: line-through;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
       }
     }
 
@@ -38,8 +62,13 @@
       span {
         margin-right: 20px;
 
+        @include tablet {
+          margin-right: 10px;
+        }
+
         .fa-pen-to-square {
           cursor: pointer;
+          color: greenyellow;
         }
 
         .fa-trash-can {
