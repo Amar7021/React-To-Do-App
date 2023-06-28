@@ -1,0 +1,52 @@
+.taskList {
+  display: flex;
+  justify-content: center;
+
+  .task-container {
+    width: 60vw;
+    height: 60px;
+    display: flex;
+    background-color: #555;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 22px;
+    position: relative;
+
+    .listed-task {
+      width: 60vw;
+      display: flex;
+      align-items: center;
+
+      span {
+        margin-left: 20px;
+
+        .fa-circle-check {
+          cursor: pointer;
+          color: greenyellow;
+        }
+      }
+
+      .done {
+        text-decoration: line-through;
+      }
+    }
+
+    .icons-container {
+      display: flex;
+      align-items: center;
+
+      span {
+        margin-right: 20px;
+
+        .fa-pen-to-square {
+          cursor: pointer;
+        }
+
+        .fa-trash-can {
+          cursor: pointer;
+          color: rgb(197, 59, 59);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,45 @@
+.updateForm {
+  display: flex;
+  justify-content: center;
+
+  .input-container {
+    width: 40vw;
+    margin: 0 25px 30px 30px;
+
+    .input {
+      width: 40vw;
+      height: 50px;
+      border: none;
+      outline: none;
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 5px;
+    }
+  }
+
+  .updateBtn {
+    width: 100px;
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+    background: blue;
+    color: var(--text-color);
+    margin-right: 15px;
+  }
+
+  .cancelBtn {
+    width: 100px;
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+    background: red;
+    color: var(--text-color);
+    margin-right: 15px;
+  }
+}

@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-color: rgb(2, 21, 2);
+  --text-color: #fff;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.app {
+  margin: 100px;
+  justify-items: center;
+
+  h2 {
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
+  .displayText {
+    text-align: center;
+  }
+}
